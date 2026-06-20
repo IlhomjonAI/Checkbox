@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9e9e9;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.space {
+    justify-content: space-between;
+}
+
+.fdc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.items {
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    background-color: white;
+    padding: 100px 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: Barlow;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #48494D;
+}
+
+.car-search {
+    width: 252;
+    height: 30;
+    opacity: 1;
+    border-width: 1px;
+    border: 1px solid #E0E0E0;
+    color: black;
+    padding: 10px 100px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.car-search::placeholder {
+    color: #E0E0E0;
+}
+
+.check-style {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #CDCDCD;
+    margin-right: 8px;
+}
+
+.Checkbox label input:checked+.check-style {
+    background-color: #FF7931;
+    border-color: #FF7931;
+    background-image: url("./img/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fdc h4 {
+    font-family: Proxima Nova;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FF7931;
+    margin-top: 30px;
+}
+
+.radio-style {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #CDCDCD;
+    margin-right: 8px;
+}
+
+.radio label input:checked+.radio-style {
+    background-color: #FF7931;
+    border-color: #FF7931;
+    background-image: url("./img/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
